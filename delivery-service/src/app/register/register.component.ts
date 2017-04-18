@@ -7,8 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegisterComponent implements OnInit {
 
+  roles: Array<string> = ['Role...', 'Courier', 'Sender'];
+
   constructor() { }
 
+  OnSubmit() {
+    // code
+  }
   ngOnInit() {
   }
 

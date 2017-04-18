@@ -16,6 +16,8 @@ import { AuthService } from './user/auth/auth.service';
 import { GuardService } from './user/guard/guard.service';
 
 import { AgmCoreModule } from 'angular2-google-maps/core';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { AgmCoreModule } from 'angular2-google-maps/core';
     MapsComponent,
     HistoryComponent,
     CourierComponent,
-    SenderComponent
+    SenderComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

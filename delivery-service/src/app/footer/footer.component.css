@@ -1,0 +1,11 @@
+/* Footer */
+.footer-full {
+  margin-top: 680px;
+  background-color: #37424b;
+  color: #FFFFFF;
+  text-align: center;
+  height: 60px;
+}
+.footer-full p {
+  margin-top: 20px;
+}

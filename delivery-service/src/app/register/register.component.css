@@ -1,0 +1,16 @@
+/* Forms */
+.form-register {
+  height: 40px;
+  line-height: 35px;
+  font-size: 12pt;
+  font-family: Lucida bright;
+}
+/* Buttons */
+.btn-register, .btn-login {
+  width: 120px;
+}
+
+.register-form {
+  margin-top: 45px;
+  margin-bottom: 300px;
+}
