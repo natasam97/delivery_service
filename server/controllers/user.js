@@ -10,10 +10,12 @@ router.post('/register', function(req, res){
 
     var salt = bcrypt.genSaltSync(10);
     var hash = bcrypt.hashSync(req.body.password, salt);
+    var userRole = req.body.role.toLowerCase();
 
     var data = {
         email : req.body.email,
-        password: hash
+        password: hash,
+        role: userRole
     };
 
     var model = new db();
@@ -23,7 +25,7 @@ router.post('/register', function(req, res){
         if (err) {
             return res.json({"error" : true, "message" : err})
         }
-
+        
         res.json({"error": false, "message": 'New user created.'});
     });
 });
@@ -50,6 +52,7 @@ router.post('/login', function(req, res) {
         res.json({
             error: false,
             message: 'Validation successful!',
+            role: response.role,
             token: token
         });
     });
