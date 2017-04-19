@@ -1,0 +1,21 @@
+2017-04-19T12:57:44.949832401 0.075466s notice: Recursively removing directory /home/skytek/Projects/server/rethinkdb_data/tmp
+2017-04-19T12:57:44.961168427 0.086801s notice: Initializing directory /home/skytek/Projects/server/rethinkdb_data
+2017-04-19T12:57:44.969468413 0.095101s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/home/skytek/Projects/server/rethinkdb_data' did not already exist or is empty.)
+2017-04-19T12:57:44.969559850 0.095193s notice: Running rethinkdb 2.3.5~0xenial (GCC 5.3.1)...
+2017-04-19T12:57:44.974069050 0.099704s notice: Running on Linux 4.4.0-72-generic x86_64
+2017-04-19T12:57:44.974115253 0.099748s notice: Loading data from directory /home/skytek/Projects/server/rethinkdb_data
+2017-04-19T12:57:45.020508270 0.146141s info: Automatically using cache size of 703 MB
+2017-04-19T12:57:45.023100556 0.148733s notice: Listening for intracluster connections on port 29015
+2017-04-19T12:57:45.028092326 0.153725s notice: Listening for client driver connections on port 28015
+2017-04-19T12:57:45.028299473 0.153932s notice: Listening for administrative HTTP connections on port 8080
+2017-04-19T12:57:45.028302295 0.153935s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-04-19T12:57:45.028305778 0.153938s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-04-19T12:57:45.028308976 0.153942s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-04-19T12:57:45.028312174 0.153945s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-04-19T12:57:45.028315449 0.153948s notice: Server ready, "skytek_dev_6a8" df0d1cd1-b270-4926-909e-1ee2430dd169
+2017-04-19T12:58:31.930490519 47.056123s info: Table 86f54de4-e694-483e-b02d-4f5d5e5cecbd: Starting a new Raft election for term 1.
+2017-04-19T12:58:31.944489959 47.070123s info: Table 86f54de4-e694-483e-b02d-4f5d5e5cecbd: Added replica on this server.
+2017-04-19T12:58:31.948482480 47.074115s info: Table 86f54de4-e694-483e-b02d-4f5d5e5cecbd: This server is Raft leader for term 1. Latest log index is 0.
+2017-04-19T12:58:38.197830677 53.323463s info: Table 87b90f52-9b5b-4ed5-8beb-1546e73df1ae: Starting a new Raft election for term 1.
+2017-04-19T12:58:38.198053447 53.323686s info: Table 87b90f52-9b5b-4ed5-8beb-1546e73df1ae: Added replica on this server.
+2017-04-19T12:58:38.200691775 53.326324s info: Table 87b90f52-9b5b-4ed5-8beb-1546e73df1ae: This server is Raft leader for term 1. Latest log index is 0.
