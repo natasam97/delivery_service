@@ -10,12 +10,11 @@ router.post('/register', function(req, res){
 
     var salt = bcrypt.genSaltSync(10);
     var hash = bcrypt.hashSync(req.body.password, salt);
-    var userRole = req.body.role.toLowerCase();
 
     var data = {
         email : req.body.email,
         password: hash,
-        role: userRole
+        role: req.body.role
     };
 
     var model = new db();
@@ -25,7 +24,7 @@ router.post('/register', function(req, res){
         if (err) {
             return res.json({"error" : true, "message" : err})
         }
-        
+
         res.json({"error": false, "message": 'New user created.'});
     });
 });
