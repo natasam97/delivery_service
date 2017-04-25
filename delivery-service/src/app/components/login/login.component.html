@@ -1,0 +1,12 @@
+<form (ngSubmit)="login(loginForm)" #loginForm="ngForm" class="col-md-4 col-md-offset-4 login-form">
+  <div class="form-group">
+    <input type="email" class="form-control form-login" name="email" placeholder="Enter your email:" autocomplete="off" required ngModel="">
+  </div>
+
+  <div class="form-group">
+    <input type="password" class="form-control form-login" name="password" placeholder="Enter your password:" autocomplete="off" required ngModel="">
+  </div>
+
+  <button type="button" (click)="registerSwitch()" class="btn btn-success btn-register">Registration</button>
+  <button type="submit" class="btn btn-warning pull-right btn-login">Log in</button>
+</form>
