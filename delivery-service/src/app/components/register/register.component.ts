@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 })
 export class RegisterComponent implements OnInit {
 
-  roles: Array<string> = ['Role...', 'Courier', 'Sender'];
+  roles: Array<string> = ['Courier', 'Sender'];
 
   constructor(
     private _auth: AuthService,

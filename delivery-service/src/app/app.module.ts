@@ -20,6 +20,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { AppRoutingModule, RoutedComponents } from './app-routing/app-routing.module';
+import { LogoutComponent } from './components/logout/logout.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { AppRoutingModule, RoutedComponents } from './app-routing/app-routing.mo
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    RoutedComponents
+    RoutedComponents,
+    LogoutComponent
   ],
   imports: [
     BrowserModule,

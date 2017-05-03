@@ -24,11 +24,10 @@ export class LoginComponent implements OnInit {
     this._auth.userLogin(form.value.email, form.value.password)
       .subscribe(
         data => {
-
           // if true navigate to routes
 
-          if(data === true) {
-            this._router.navigate(['/']);
+          if (data === true) {
+            this._router.navigate(['/history']);
           } else {
             this._router.navigate(['/login']);
           }
