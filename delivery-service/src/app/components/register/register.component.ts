@@ -12,10 +12,12 @@ import { Router } from '@angular/router';
 export class RegisterComponent implements OnInit {
 
   roles: Array<string> = ['Courier', 'Sender'];
+  msg: Array<string>;
 
   constructor(
     private _auth: AuthService,
-    private _router: Router
+    private _router: Router,
+
   ) { }
 
   register(form: NgForm) {
@@ -23,9 +25,9 @@ export class RegisterComponent implements OnInit {
       .subscribe(
         res => {
           if (res === true) {
-            this._router.navigate(['/login']);
+            this.msg.push('Successfully registred!');
           } else {
-            this._router.navigate(['/register']);
+            this.msg.push('Failed to register user, try again!');
           }
         }
       );
