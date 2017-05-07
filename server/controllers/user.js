@@ -41,7 +41,7 @@ router.post('/login', function(req, res) {
             return res.json({"error": true, "message": 'User not found.'});
         }
         if (bcrypt.compareSync(req.body.password, response.password) === false) {
-            return res.json({"error" : true, "messsage": 'Invalid password.'})
+            return res.json({"error" : true, "message": 'Invalid password.'})
         }
 
         var token = jwt.sign(response, global.config.secret, {
@@ -57,4 +57,29 @@ router.post('/login', function(req, res) {
     });
 });
 
+
+
+router.post('/sender', function(req, res) {
+    var model = new db();
+
+    model.sendPackage(req.body.name, req.body.street, req.body.message, function (err, response) {
+        if (err) {
+            res.json({"error": true, "message": err});
+        }
+        if (!response) {
+            return res.json({"error": true, "message": 'Package not imported!'});
+        }
+
+        res.json({
+            error: false,
+            message: 'Package imported!'
+        });
+    }
+    );
+});
+
+router.get('/courier', function(req, res) {
+
+    }
+);
 module.exports = router;

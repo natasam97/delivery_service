@@ -74,6 +74,79 @@ class db {
             callback(err === null ? false : true, data);
         });
     }
+// NOT USER FROM HERE
+    sendPackage(name, street, msg, callback) {
+        var self = this;
+
+        async.waterfall([
+            function (callback) {
+                self.dbConnect(function (err, connection) {
+                    if (err) {
+                        return callback(true, 'Error connecting to database');
+                    }
+                    callback(null, connection);
+                });
+            },
+            function (connection, callback) {
+                rethinkdb.table('packages').insert([
+                    {
+                        "name": name,
+                        "street": street,
+                        "msg": msg
+                    }
+                ]).run(connection, function(err, cursor) {
+                    connection.close();
+                    if (err) {
+                        return callback(true, 'Error while fetching user from database.');
+                    }
+                    cursor.toArray(function (err, result) {
+                        if (err) {
+                            return callback(true, 'Error reading cursor');
+                        }
+
+                        callback(null, result);
+                    })
+                });
+            },
+
+        ], function(err, data) {
+            callback(err === null ? false : true, data);
+        });
+    }
+
+    getPackages(callback) {
+        var self = this;
+
+        async.waterfall([
+            function (callback) {
+                self.dbConnect(function (err, connection) {
+                    if (err) {
+                        return callback(true, 'Error connecting to database');
+                    }
+                    callback(null, connection);
+                });
+            },
+            function (connection, callback) {
+                rethinkdb.table('packages').get().run(connection, function(err, cursor) {
+                    connection.close();
+                    if (err) {
+                        return callback(true, 'Error while fetching user from database.');
+                    }
+                    cursor.toArray(function (err, result) {
+                        if (err) {
+                            return callback(true, 'Error reading cursor');
+                        }
+
+                        callback(null, result);
+                    })
+                });
+            },
+
+        ], function(err, data) {
+            callback(err === null ? false : true, data);
+        });
+    }
+
 
 }
 
