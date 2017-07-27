@@ -99,13 +99,11 @@ class db {
                     if (err) {
                         return callback(true, 'Error while fetching user from database.');
                     }
-                    cursor.toArray(function (err, result) {
                         if (err) {
                             return callback(true, 'Error reading cursor');
                         }
 
-                        callback(null, result);
-                    })
+                        callback(null, cursor);
                 });
             },
 

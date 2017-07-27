@@ -79,7 +79,22 @@ router.post('/sender', function(req, res) {
 });
 
 router.get('/courier', function(req, res) {
+    var model = new db();
 
-    }
-);
+    model.getPackages(function (err, response) {
+        if (err) {
+            res.json({"error": true, "message": err});
+        }
+
+        if(!response) {
+            return res.json({"error": true, "message": 'No packages'});
+        }
+
+        res.json({
+            error: false,
+            packages: response
+        })
+    })
+
+});
 module.exports = router;
