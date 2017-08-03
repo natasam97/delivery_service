@@ -77,7 +77,6 @@ class db {
 // NOT USER FROM HERE
     sendPackage(name, street, msg, callback) {
         var self = this;
-
         async.waterfall([
             function (callback) {
                 self.dbConnect(function (err, connection) {
@@ -88,11 +87,20 @@ class db {
                 });
             },
             function (connection, callback) {
+                var date = new Date();
+                var year = date.getFullYear();
+                var month = date.getMonth();
+                var day = date.getDay();
+                var hour = date.getHours();
+                var minutes = date.getMinutes();
+                var fullDate =  day + '/' + month + '/' + year + ' ' + hour + ':' + minutes;
                 rethinkdb.table('packages').insert([
                     {
                         "name": name,
                         "street": street,
-                        "msg": msg
+                        "msg": msg,
+                        "status": 'Not delivered',
+                        "created_at": fullDate
                     }
                 ]).run(connection, function(err, cursor) {
                     connection.close();
@@ -125,7 +133,7 @@ class db {
                 });
             },
             function (connection, callback) {
-                rethinkdb.table('packages').get().run(connection, function(err, cursor) {
+                rethinkdb.table('packages').run(connection, function(err, cursor) {
                     connection.close();
                     if (err) {
                         return callback(true, 'Error while fetching user from database.');
@@ -138,7 +146,7 @@ class db {
                         callback(null, result);
                     })
                 });
-            },
+            }
 
         ], function(err, data) {
             callback(err === null ? false : true, data);

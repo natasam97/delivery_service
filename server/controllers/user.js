@@ -25,7 +25,7 @@ router.post('/register', function(req, res){
             return res.json({"error" : true, "message" : err})
         }
 
-        res.json({"error": false, "message": 'New user created.'});
+        return res.json({"error": false, "message": 'New user created.'});
     });
 });
 
@@ -83,14 +83,14 @@ router.get('/courier', function(req, res) {
 
     model.getPackages(function (err, response) {
         if (err) {
-            res.json({"error": true, "message": err});
+            return res.json({"error": true, "message": 'Greska'});
         }
 
         if(!response) {
             return res.json({"error": true, "message": 'No packages'});
         }
 
-        res.json({
+        return res.json({
             error: false,
             packages: response
         })

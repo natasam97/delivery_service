@@ -19,3 +19,86 @@
 2017-07-27T14:22:42.665635487 539.812184s info: Table 3e23e210-0b13-4616-8e88-60a96c7c819a: Starting a new Raft election for term 1.
 2017-07-27T14:22:42.666043712 539.812593s info: Table 3e23e210-0b13-4616-8e88-60a96c7c819a: Added replica on this server.
 2017-07-27T14:22:42.757503361 539.904052s info: Table 3e23e210-0b13-4616-8e88-60a96c7c819a: This server is Raft leader for term 1. Latest log index is 0.
+2017-07-27T16:47:02.880146788 9200.026696s notice: Removing file /home/skytek/delivery_service/server/rethinkdb_data/3e23e210-0b13-4616-8e88-60a96c7c819a
+2017-07-27T16:47:02.880156148 9200.026705s info: Table 3e23e210-0b13-4616-8e88-60a96c7c819a: Deleted the table.
+2017-07-27T16:47:39.122477431 9236.269026s info: Table b2bbd9ab-e7bc-45f1-ad30-ffc58e4fa172: Starting a new Raft election for term 1.
+2017-07-27T16:47:39.122768373 9236.269317s info: Table b2bbd9ab-e7bc-45f1-ad30-ffc58e4fa172: Added replica on this server.
+2017-07-27T16:47:39.173271791 9236.319821s info: Table b2bbd9ab-e7bc-45f1-ad30-ffc58e4fa172: This server is Raft leader for term 1. Latest log index is 0.
+2017-07-27T17:36:00.050864212 12137.197413s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2017-07-27T17:36:00.051026574 12137.197576s notice: Shutting down client connections...
+2017-07-27T17:36:00.051149512 12137.197698s notice: All client connections closed.
+2017-07-27T17:36:00.051158285 12137.197707s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2017-07-27T17:36:00.093280442 12137.239829s notice: Storage engine shut down.
+2017-07-27T21:39:09.684934992 0.105440s notice: Running rethinkdb 2.3.6~0xenial (GCC 5.3.1)...
+2017-07-27T21:39:09.699054963 0.119565s notice: Running on Linux 4.10.0-27-generic x86_64
+2017-07-27T21:39:09.699136037 0.119641s notice: Loading data from directory /home/skytek/delivery_service/server/rethinkdb_data
+2017-07-27T21:39:09.805125163 0.225631s info: Automatically using cache size of 653 MB
+2017-07-27T21:39:09.806568953 0.227074s notice: Listening for intracluster connections on port 29015
+2017-07-27T21:39:09.881754191 0.302260s notice: Listening for client driver connections on port 28015
+2017-07-27T21:39:09.881966456 0.302472s notice: Listening for administrative HTTP connections on port 8080
+2017-07-27T21:39:09.881970508 0.302475s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-07-27T21:39:09.881992466 0.302498s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-07-27T21:39:09.881996332 0.302501s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-07-27T21:39:09.882000659 0.302506s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-07-27T21:39:09.882004219 0.302509s notice: Server ready, "skytek_ynk" d8d6e742-c6a5-4fa0-b4fc-7424a6e74cea
+2017-07-27T21:39:10.895884155 1.316390s info: Table 46be50aa-2a8b-435b-88cd-149ca2de6290: Starting a new Raft election for term 2.
+2017-07-27T21:39:10.945453503 1.365959s info: Table 46be50aa-2a8b-435b-88cd-149ca2de6290: This server is Raft leader for term 2. Latest log index is 2.
+2017-07-27T21:39:11.416926848 1.837432s info: Table b2bbd9ab-e7bc-45f1-ad30-ffc58e4fa172: Starting a new Raft election for term 2.
+2017-07-27T21:39:11.488804911 1.909310s info: Table b2bbd9ab-e7bc-45f1-ad30-ffc58e4fa172: This server is Raft leader for term 2. Latest log index is 2.
+2017-07-27T21:56:28.348441844 1038.768947s notice: Removing file /home/skytek/delivery_service/server/rethinkdb_data/46be50aa-2a8b-435b-88cd-149ca2de6290
+2017-07-27T21:56:28.348453386 1038.768958s info: Table 46be50aa-2a8b-435b-88cd-149ca2de6290: Deleted the table.
+2017-07-27T21:56:28.405366638 1038.825872s notice: Removing file /home/skytek/delivery_service/server/rethinkdb_data/b2bbd9ab-e7bc-45f1-ad30-ffc58e4fa172
+2017-07-27T21:56:28.405379006 1038.825884s info: Table b2bbd9ab-e7bc-45f1-ad30-ffc58e4fa172: Deleted the table.
+2017-07-27T21:56:31.309139969 1041.729645s info: Table ac5cb893-82b8-4b5a-abaa-44cc0e4990fc: Starting a new Raft election for term 1.
+2017-07-27T21:56:31.309323487 1041.729829s info: Table ac5cb893-82b8-4b5a-abaa-44cc0e4990fc: Added replica on this server.
+2017-07-27T21:56:31.360172254 1041.780678s info: Table ac5cb893-82b8-4b5a-abaa-44cc0e4990fc: This server is Raft leader for term 1. Latest log index is 0.
+2017-07-27T21:56:35.471336849 1045.891842s info: Table 4d30bc7d-d96f-4397-8a5c-16ae66be73ac: Starting a new Raft election for term 1.
+2017-07-27T21:56:35.471548435 1045.892054s info: Table 4d30bc7d-d96f-4397-8a5c-16ae66be73ac: Added replica on this server.
+2017-07-27T21:56:35.526817187 1045.947323s info: Table 4d30bc7d-d96f-4397-8a5c-16ae66be73ac: This server is Raft leader for term 1. Latest log index is 0.
+2017-07-27T23:40:15.139787333 7265.560293s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2017-07-27T23:40:15.139981994 7265.560487s notice: Shutting down client connections...
+2017-07-27T23:40:15.140070201 7265.560575s notice: All client connections closed.
+2017-07-27T23:40:15.140074901 7265.560580s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2017-07-27T23:40:15.144929463 7265.565435s notice: Storage engine shut down.
+2017-08-03T19:19:59.542607433 5.651299s notice: Running rethinkdb 2.3.6~0xenial (GCC 5.3.1)...
+2017-08-03T19:19:59.555822313 5.664517s notice: Running on Linux 4.10.0-28-generic x86_64
+2017-08-03T19:19:59.555927095 5.664618s notice: Loading data from directory /home/skytek/delivery_service/server/rethinkdb_data
+2017-08-03T19:19:59.760591504 5.869283s info: Automatically using cache size of 2621 MB
+2017-08-03T19:19:59.762281355 5.870972s notice: Listening for intracluster connections on port 29015
+2017-08-03T19:19:59.966130903 6.074822s notice: Listening for client driver connections on port 28015
+2017-08-03T19:19:59.966302493 6.074993s notice: Listening for administrative HTTP connections on port 8080
+2017-08-03T19:19:59.966305696 6.074996s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-08-03T19:19:59.966308677 6.074999s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-08-03T19:19:59.966321345 6.075012s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-08-03T19:19:59.966324356 6.075015s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-08-03T19:19:59.966327167 6.075018s notice: Server ready, "skytek_ynk" d8d6e742-c6a5-4fa0-b4fc-7424a6e74cea
+2017-08-03T19:20:01.419073012 7.527764s info: Table 4d30bc7d-d96f-4397-8a5c-16ae66be73ac: Starting a new Raft election for term 2.
+2017-08-03T19:20:01.471040485 7.579732s info: Table 4d30bc7d-d96f-4397-8a5c-16ae66be73ac: This server is Raft leader for term 2. Latest log index is 2.
+2017-08-03T19:20:01.534994232 7.643685s info: Table ac5cb893-82b8-4b5a-abaa-44cc0e4990fc: Starting a new Raft election for term 2.
+2017-08-03T19:20:01.604305054 7.712996s info: Table ac5cb893-82b8-4b5a-abaa-44cc0e4990fc: This server is Raft leader for term 2. Latest log index is 2.
+2017-08-03T19:31:10.689593606 676.798285s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2017-08-03T19:31:10.689746358 676.798437s notice: Shutting down client connections...
+2017-08-03T19:31:10.689869325 676.798560s notice: All client connections closed.
+2017-08-03T19:31:10.689883008 676.798574s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2017-08-03T19:31:10.707394859 676.816086s notice: Storage engine shut down.
+2017-08-03T19:53:29.639339248 0.195908s notice: Running rethinkdb 2.3.6~0xenial (GCC 5.3.1)...
+2017-08-03T19:53:29.645180676 0.201753s notice: Running on Linux 4.10.0-28-generic x86_64
+2017-08-03T19:53:29.645287173 0.201855s notice: Loading data from directory /home/skytek/delivery_service/server/rethinkdb_data
+2017-08-03T19:53:29.818652943 0.375221s info: Automatically using cache size of 2075 MB
+2017-08-03T19:53:29.819407530 0.375976s notice: Listening for intracluster connections on port 29015
+2017-08-03T19:53:29.916731634 0.473300s notice: Listening for client driver connections on port 28015
+2017-08-03T19:53:29.916926384 0.473495s notice: Listening for administrative HTTP connections on port 8080
+2017-08-03T19:53:29.916929474 0.473497s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-08-03T19:53:29.916932648 0.473501s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-08-03T19:53:29.916935460 0.473503s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-08-03T19:53:29.916939987 0.473508s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-08-03T19:53:29.916950548 0.473519s notice: Server ready, "skytek_ynk" d8d6e742-c6a5-4fa0-b4fc-7424a6e74cea
+2017-08-03T19:53:31.653079266 2.209648s info: Table 4d30bc7d-d96f-4397-8a5c-16ae66be73ac: Starting a new Raft election for term 3.
+2017-08-03T19:53:31.684998599 2.241567s info: Table ac5cb893-82b8-4b5a-abaa-44cc0e4990fc: Starting a new Raft election for term 3.
+2017-08-03T19:53:31.698163372 2.254732s info: Table 4d30bc7d-d96f-4397-8a5c-16ae66be73ac: This server is Raft leader for term 3. Latest log index is 5.
+2017-08-03T19:53:31.759481528 2.316050s info: Table ac5cb893-82b8-4b5a-abaa-44cc0e4990fc: This server is Raft leader for term 3. Latest log index is 5.
+2017-08-04T00:59:33.011094736 18363.567663s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2017-08-04T00:59:33.011206853 18363.567775s notice: Shutting down client connections...
+2017-08-04T00:59:33.011400542 18363.567969s notice: All client connections closed.
+2017-08-04T00:59:33.011406736 18363.567975s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2017-08-04T00:59:33.031198045 18363.587767s notice: Storage engine shut down.
