@@ -23,7 +23,7 @@ const routes: Routes = [
   },
   {
     path: 'history',
-    component: HistoryComponent
+    component: CourierFormComponent
   },
   {
     path: 'register',

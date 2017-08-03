@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
-import { Http, Headers } from '@angular/http';
+import { Http, Headers, RequestOptions } from '@angular/http';
 
 @Injectable()
 export class SenderService {
 
-  url = 'http://localhost:4200/sender';
-  headers = new Headers();
+  url = 'http://localhost:4200/api/sender';
+  headers = new Headers({ 'Content-Type': 'application/json' });
+  options = new RequestOptions({ headers: this.headers});
   constructor(
     private _http: Http
   ) { }
@@ -14,10 +15,10 @@ export class SenderService {
     let data = {
       name: name,
       street: street,
-      msg: message,
+      message: message,
     };
 
-    return this._http.post(this.url, JSON.stringify(data), this.headers)
+    return this._http.post(this.url, JSON.stringify(data), this.options)
       .map(res => res.json());
   }
 

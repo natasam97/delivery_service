@@ -27,7 +27,7 @@ export class LoginComponent implements OnInit {
           // if true navigate to routes
 
           if (data === true) {
-            this._router.navigate(['/history']);
+            this._router.navigate(['/home']);
           } else {
             this._router.navigate(['/login']);
           }

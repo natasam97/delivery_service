@@ -12,6 +12,6 @@ export class CourierService {
 
   getPackages() {
     return this._http.get(this.url, this.headers)
-      .map(res => res.json());
+      .map((res) => res.json())
   }
 }

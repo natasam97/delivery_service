@@ -1,8 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Http, Headers, RequestOptions } from '@angular/http';
 
-import { Observable } from 'rxjs/Observable';
-
 import 'rxjs/add/operator/map';
 
 @Injectable()
@@ -42,6 +40,13 @@ export class AuthService {
       });
   }
 
+  isLogged() {
+    if (localStorage.getItem('currentUser')) {
+      return true;
+    } else {
+      return false;
+    }
+  }
   userRegister(email: string, password: string, role: string) {
 
     const url = 'http://localhost:4200/api/register';

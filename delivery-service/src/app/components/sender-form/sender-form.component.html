@@ -1,15 +1,19 @@
-<form (ngSubmit)="sender(loginForm)" #packageForm="ngForm" class="col-md-4 col-md-offset-4 sender-form">
-  <div class="form-group">
-    <input type="text" class="form-control form-sender" name="name" placeholder="Enter your name" autocomplete="off" required ngModel="">
-  </div>
+<div style="margin-top: 50px">
+  <h4 class="col-md-4 col-md-offset-4">Do you want to send some packages?</h4>
+  <form (ngSubmit)="sender(packageForm)" #packageForm="ngForm" class="col-md-4 col-md-offset-4 sender-form">
+    <div class="form-group">
+      <input type="text" class="form-control form-sender" name="name" placeholder="Enter your name" autocomplete="off" required ngModel="">
+    </div>
 
-  <div class="form-group">
-    <input type="text" class="form-control form-sender" name="street" placeholder="Street and number" autocomplete="off" required ngModel="">
-  </div>
+    <div class="form-group">
+      <input type="text" class="form-control form-sender" name="street" placeholder="Street and number" autocomplete="off" required ngModel="">
+    </div>
 
-  <div class="form-group">
-    <input type="text" class="form-control form-sender" name="message" placeholder="Write message if you have any" autocomplete="off" required ngModel="">
-  </div>
+    <div class="form-group">
+      <input type="text" class="form-control form-sender" name="message" placeholder="Write message if you have any" autocomplete="off" required ngModel="">
+    </div>
 
-  <button type="submit" class="btn btn-warning pull-right btn-package">Send package</button>
-</form>
+    <button type="submit" class="btn btn-warning pull-right btn-package">Send package</button>
+  </form>
+</div>
+

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-maps',
@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./maps.component.css']
 })
 export class MapsComponent implements OnInit {
+  @Input() latitude;
+  @Input() longitude;
+
+  lat: number = this.latitude;
+  lng: number = this.longitude;
 
   constructor() { }
 

@@ -15,7 +15,7 @@ import { UserService } from './user/user.service';
 import { AuthService } from './user/auth/auth.service';
 import { GuardService } from './user/guard/guard.service';
 
-import { AgmCoreModule } from 'angular2-google-maps/core';
+import { AgmCoreModule } from '@agm/core';
 import { FlashMessagesModule } from 'angular2-flash-messages';
 
 import { HeaderComponent } from './components/header/header.component';
@@ -25,8 +25,9 @@ import { AppRoutingModule, RoutedComponents } from './app-routing/app-routing.mo
 import { LogoutComponent } from './components/logout/logout.component';
 import { SenderFormComponent } from './components/sender-form/sender-form.component';
 import { CourierFormComponent } from './components/courier-form/courier-form.component';
-import {CourierService} from "./services/courier.service";
-import {SenderService} from "./services/sender.service";
+import { CourierService } from "./services/courier.service";
+import { SenderService } from "./services/sender.service";
+import { GoogleService } from "./services/google.service";
 
 
 @NgModule({
@@ -61,7 +62,8 @@ import {SenderService} from "./services/sender.service";
     AuthService,
     GuardService,
     SenderService,
-    CourierService
+    CourierService,
+    GoogleService
   ],
   bootstrap: [AppComponent]
 })

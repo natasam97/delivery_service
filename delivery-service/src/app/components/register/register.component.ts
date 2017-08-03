@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
 export class RegisterComponent implements OnInit {
 
   roles: Array<string> = ['Courier', 'Sender'];
-  msg: Array<string>;
+  // msg: Array<string> = [];
 
   constructor(
     private _auth: AuthService,
@@ -25,9 +25,9 @@ export class RegisterComponent implements OnInit {
       .subscribe(
         res => {
           if (res === true) {
-            this.msg.push('Successfully registred!');
+            this._router.navigate(['/login']);
           } else {
-            this.msg.push('Failed to register user, try again!');
+            this._router.navigate(['/register']);
           }
         }
       );
